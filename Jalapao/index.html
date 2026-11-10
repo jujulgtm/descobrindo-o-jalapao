@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Descobrindo o Jalapão</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #292929; color: #111; font-family: Arial, sans-serif; }
+    main { max-width: 1400px; margin: auto; padding: 20px; }
+    section { background: #aaaa43; padding: 16px; margin-bottom: 16px; }
+    h1 { margin: 0 0 18px; text-align: center; font-size: 32px; }
+    h2 { margin: 20px 0 12px; font-size: 23px; }
+    h2:first-child { margin-top: 0; }
+    p { margin: 0 0 12px; line-height: 1.35; }
+    .galeria, .videos { display: flex; flex-wrap: wrap; gap: 4px; }
+    .galeria img { width: 30%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+    .video { width: 43%; }
+    iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #292929; }
+    a { display: inline-block; margin: 5px 0; color: #18232c; font-size: 14px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #e7e5b0; text-align: left; padding: 8px; }
+    @media (max-width: 650px) {
+      main { padding: 8px; }
+      .galeria img { width: calc(50% - 2px); }
+      .video { width: 100%; }
+      th, td { font-size: 14px; padding: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Descobrindo o Jalapão</h1>
+      <p>O Jalapão é uma região encantadora localizada no estado do Tocantins, Brasil. Conhecido por suas belezas naturais, o Jalapão é um destino imperdível para os amantes da natureza e da aventura.</p>
+      <h2>Imagens:</h2>
+      <div class="galeria">
+        <img src="imagens/cachoeira.jpg" alt="Águas da cachoeira descendo sobre as rochas no Jalapão">
+        <img src="imagens/dunas.jpg" alt="Dunas alaranjadas do Jalapão com a serra ao fundo">
+      </div>
+    </section>
+    <section>
+      <h2>Vídeos:</h2>
+      <div class="videos">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/v-RN_cDGjH8" title="Roteiro de quatro dias pelo Jalapão" allowfullscreen></iframe>
+          <a href="https://www.youtube.com/watch?v=v-RN_cDGjH8">Assistir ao roteiro no YouTube</a>
+        </div>
+        <div class="video">
+          <iframe src="https://player.globo.com/video/8668942/" title="Globo Repórter no Jalapão" allowfullscreen></iframe>
+          <a href="https://globoplay.globo.com/v/8668942/">Assistir à reportagem no Globoplay</a>
+        </div>
+      </div>
+      <h2>Descobrindo o Jalapão:</h2>
+      <p>O Jalapão é famoso por suas paisagens únicas, que incluem dunas de areia dourada, cachoeiras e fervedouros. A região é um paraíso para quem gosta de fazer trilhas e explorar o cerrado.</p>
+      <h2>Aventuras no Jalapão:</h2>
+      <p>Algumas das atrações mais populares do Jalapão incluem a Cachoeira da Velha, a Pedra Furada e os fervedouros, onde a água brota do fundo e ajuda os visitantes a flutuar.</p>
+      <h2 id="atividades">Tabela de Dados Fictícios:</h2>
+      <table aria-labelledby="atividades">
+        <thead>
+          <tr><th scope="col">Atividade</th><th scope="col">Duração</th><th scope="col">Nível de Dificuldade</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Trilha até a Cachoeira da Velha</td><td>4 horas</td><td>Moderado</td></tr>
+          <tr><td>Rafting no Rio Novo</td><td>1 dia</td><td>Alto</td></tr>
+          <tr><td>Passeio de 4x4 pelas Dunas</td><td>6 horas</td><td>Fácil</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
